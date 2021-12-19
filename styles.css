@@ -1,0 +1,102 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin: 1rem;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+
+/* ---- Layout Containers ---- */
+
+main {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    max-width: 100%;
+}
+
+header,
+section.price,
+section.why {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.price,
+.why,
+header {
+    min-height: 80px;
+}
+
+.price {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.why {
+    background-color: hsl(179, 62%, 50%);
+}
+
+
+/* ---- Page Elements ---- */
+
+h1 {
+    color: hsl(179, 62%, 43%);
+}
+
+h1,
+h2.heading,
+h2.price,
+h2.foot {
+    margin-bottom: 1rem;
+}
+
+h2.heading {
+    color: hsl(71, 73%, 54%);
+}
+
+h2,
+p {
+    color: hsl(204, 43%, 93%);
+}
+
+p.heading {
+    color: hsl(218, 22%, 67%);
+}
+
+p.heading {
+    margin-bottom: 1.5rem;
+}
+
+.attribution {
+    color: hsl(218, 22%, 67%);
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {
+    main {
+        display: grid;
+    }
+    header {
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    section.price {}
+}
