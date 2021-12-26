@@ -1,133 +1,183 @@
-/* ================================= 
+    /* ================================= 
   Base Element Styles
 ==================================== */
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    margin: 1rem;
-    background-color: #e6eff6;
-}
-
-
-/* ================================= 
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Karla', sans-serif;
+        font-size: 16px;
+        margin: 1rem;
+        background-color: #e6eff6;
+    }
+    
+    p {
+        line-height: 1.7;
+    }
+    
+    p.why {
+        color: rgba(255, 255, 255, 0.651);
+    }
+    
+    p.num {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    p.lighttxt {
+        margin-left: 6px;
+        color: rgba(219, 232, 240, 0.808);
+    }
+    
+    h1,
+    h2.heading,
+    p.heading {
+        padding-top: 10px;
+    }
+    /* ================================= 
   Base Layout Styles
 ==================================== */
-
-
-/* ---- Layout Containers ---- */
-
-main {
-    padding: 1rem;
-    gap: 1.5rem;
-}
-
-header,
-section.price,
-section.why {
-    padding: 1rem;
-}
-
-header {
-    background-color: white;
-    border-top-left-radius: 7px;
-    border-top-right-radius: 7px;
-}
-
-.price {
-    background-color: hsl(179, 62%, 43%);
-    border-bottom-left-radius: 7px;
-}
-
-.why {
-    background-color: hsl(179, 62%, 50%);
-    border-bottom-right-radius: 7px;
-}
-
-.parent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.2fr 0.9fr;
-    grid-template-rows: 1fr 1fr 1fr 1.3fr 0.7fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas: "top top top top" "top top top top" "price price why why" "price price why why" "footer footer footer footer";
-}
-
-.top {
-    grid-area: top;
-    height: 279px;
-}
-
-.price {
-    grid-area: price;
-}
-
-.why {
-    grid-area: why;
-}
-
-.footer {
-    grid-area: footer;
-}
-
-
-/* ---- Page Elements ---- */
-
-h1 {
-    color: hsl(179, 62%, 43%);
-}
-
-h1,
-h2.heading,
-h2.price,
-h2.foot {
-    margin-bottom: 1rem;
-}
-
-h2.heading {
-    color: hsl(71, 73%, 54%);
-}
-
-h2,
-p {
-    color: hsl(204, 43%, 93%);
-}
-
-p.heading {
-    color: hsl(218, 22%, 67%);
-}
-
-p.heading {
-    margin-bottom: 1.5rem;
-}
-
-.lighttxt,
-.num {
-    display: inline;
-}
-
-.attribution {
-    color: hsl(218, 22%, 67%);
-}
-
-button {
-    width: 100%;
-    margin-top: 1.6rem;
-    height: 2.5rem;
-    border-radius: 7px;
-    background-color: hsl(71, 73%, 54%);
-    color: #f4ffff;
-}
-
-
-/* ================================= 
+    /* ---- Layout Containers ---- */
+    
+    main {
+        padding: 1rem;
+        width: fit-content;
+    }
+    
+    header,
+    section.price,
+    section.why {
+        padding: 1rem;
+    }
+    
+    header {
+        background-color: white;
+        border-top-left-radius: 7px;
+        border-top-right-radius: 7px;
+    }
+    
+    .price {
+        background-color: hsl(179, 62%, 43%);
+    }
+    
+    .why {
+        background-color: hsl(179, 62%, 50%);
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+    }
+    
+    section.why,
+    section.price,
+    header {
+        height: 50vh;
+    }
+    /* ---- Page Elements ---- */
+    
+    h1 {
+        color: hsl(179, 62%, 43%);
+        font-size: 1.5rem;
+    }
+    
+    h1,
+    h2.heading,
+    h2.price,
+    h2.foot {
+        margin-bottom: 1rem;
+    }
+    
+    h2.heading {
+        color: hsl(71, 73%, 54%);
+    }
+    
+    h2.price,
+    h2.foot {
+        font-size: 1.3rem;
+    }
+    
+    h2,
+    p {
+        color: hsl(204, 43%, 93%);
+    }
+    
+    p.heading {
+        color: hsl(218, 22%, 67%);
+    }
+    
+    p.heading {
+        margin-bottom: 1.5rem;
+    }
+    
+    .lighttxt,
+    .num {
+        display: inline;
+    }
+    
+    .attribution {
+        color: hsl(218, 22%, 67%);
+    }
+    
+    .center {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .abvbtn {
+        padding-bottom: 5rem;
+    }
+    
+    button {
+        width: 80%;
+        margin-top: 1.6rem;
+        margin-bottom: 1.2rem;
+        height: 3.5rem;
+        border-radius: 7px;
+        border-width: 0px;
+        background-color: hsl(71, 73%, 54%);
+        color: #f4ffff;
+        box-shadow: 10px 10px 57px -9px rgba(37, 37, 37, 0.75);
+        align-self: center;
+        font-weight: bold;
+    }
+    
+    button:hover {
+        background-color: whitesmoke;
+        color: black;
+    }
+    
+    .attribution {
+        text-align: center;
+        margin-top: 20px;
+    }
+    /* ================================= 
   Media Queries
 ==================================== */
-
-@media (min-width: 768px) {}
-
-@media (min-width: 1024px) {}
+    
+    @media (min-width: 768px) {
+        .parent {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1.2fr 0.9fr;
+            grid-template-rows: 1fr 1fr 1fr 1.3fr 0.7fr;
+            gap: 0px 0px;
+            grid-auto-flow: row;
+            grid-template-areas: "top top top top" "top top top top" "price price why why" "price price why why" "footer footer footer footer";
+        }
+        .top {
+            grid-area: top;
+            height: 279px;
+        }
+        .price {
+            grid-area: price;
+            border-bottom-left-radius: 7px;
+        }
+        .why {
+            grid-area: why;
+            border-bottom-left-radius: 0;
+        }
+        .footer {
+            grid-area: footer;
+        }
+    }
+    
+    @media (min-width: 1024px) {}
