@@ -40,12 +40,38 @@ header {
 
 .price {
     background-color: hsl(179, 62%, 43%);
+    border-bottom-left-radius: 7px;
 }
 
 .why {
     background-color: hsl(179, 62%, 50%);
-    border-bottom-left-radius: 7px;
     border-bottom-right-radius: 7px;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 0.9fr;
+    grid-template-rows: 1fr 1fr 1fr 1.3fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "top top top top" "top top top top" "price price why why" "price price why why" "footer footer footer footer";
+}
+
+.top {
+    grid-area: top;
+    height: 279px;
+}
+
+.price {
+    grid-area: price;
+}
+
+.why {
+    grid-area: why;
+}
+
+.footer {
+    grid-area: footer;
 }
 
 
@@ -93,7 +119,7 @@ button {
     margin-top: 1.6rem;
     height: 2.5rem;
     border-radius: 7px;
-    background-color: color: hsl(71, 73%, 54%);
+    background-color: hsl(71, 73%, 54%);
     color: #f4ffff;
 }
 
@@ -104,13 +130,4 @@ button {
 
 @media (min-width: 768px) {}
 
-@media (min-width: 1024px) {
-    main {
-        display: grid;
-        gap: 1.5rem;
-        grid-template-columns: repeat(2, 1fr);
-    }
-    header.\.grid-col-span-2 {
-        grid-column: span 3;
-    }
-}
+@media (min-width: 1024px) {}
