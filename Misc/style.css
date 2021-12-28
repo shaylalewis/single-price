@@ -90,6 +90,7 @@
         padding: 1rem;
         width: fit-content;
         min-width: 400px;
+        max-width: 1440px;
     }
     
     header,
