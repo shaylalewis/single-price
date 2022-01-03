@@ -1,198 +1,198 @@
 /* ================================= 
   Base Element Styles
 ==================================== */
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        font-family: 'Karla', sans-serif;
-        font-size: 16px;
-        margin: 1rem;
-        background-color: #e6eff6;
-    }
-    
-    p {
-        line-height: 1.7;
-    }
-    
-    p.why {
-        color: rgba(255, 255, 255, 0.651);
-    }
-    
-    p.num {
-        font-size: 1.5rem;
-        font-weight: bold;
-    }
-    
-    p.lighttxt {
-        margin-left: 6px;
-        color: rgba(219, 232, 240, 0.808);
-    }
-    
-    h1,
-    h2.heading,
-    p.heading,
-    h2.foot,
-    p.why,
-    h2.price {
-        padding-top: 1rem;
-    }
-    
-    h1 {
-        color: hsl(179, 62%, 43%);
-        font-size: 1.5rem;
-    }
-    
-    h1,
-    h2.heading,
-    h2.price,
-    h2.foot {
-        margin-bottom: 1rem;
-    }
-    
-    a {
-        color: hsl(179, 73%, 54%);
-    }
-    
-    a:hover {
-        color: hsl(229, 88%, 68%);
-    }
-    
-    h2.heading {
-        color: hsl(71, 73%, 54%);
-    }
-    
-    h2.price,
-    h2.foot {
-        font-size: 1.3rem;
-    }
-    
-    h2,
-    p {
-        color: hsl(204, 43%, 93%);
-    }
-    
-    p.heading {
-        color: hsl(218, 22%, 67%);
-    }
-    
-    p.heading {
-        margin-bottom: 1.5rem;
-    }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  margin: 1rem;
+  background-color: #e6eff6;
+}
+
+p {
+  line-height: 1.7;
+}
+
+p.why {
+  color: rgba(255, 255, 255, 0.651);
+}
+
+p.num {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+p.lighttxt {
+  margin-left: 6px;
+  color: rgba(219, 232, 240, 0.808);
+}
+
+h1,
+h2.heading,
+p.heading,
+h2.foot,
+p.why,
+h2.price {
+  padding-top: 1rem;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.5rem;
+}
+
+h1,
+h2.heading,
+h2.price,
+h2.foot {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: hsl(179, 73%, 54%);
+}
+
+a:hover {
+  color: hsl(229, 88%, 68%);
+}
+
+h2.heading {
+  color: hsl(71, 73%, 54%);
+}
+
+h2.price,
+h2.foot {
+  font-size: 1.3rem;
+}
+
+h2,
+p {
+  color: hsl(204, 43%, 93%);
+}
+
+p.heading {
+  color: hsl(218, 22%, 67%);
+}
+
+p.heading {
+  margin-bottom: 1.5rem;
+}
 
 /* ================================= 
   Base Layout Styles
 ==================================== */
 
-    /* ---- Layout Containers ---- */
-    
-    main {
-        padding: 1rem;
-        width: fit-content;
-        min-width: 400px;
-        max-width: 1073px;
-        margin: 0 auto;
-    }
-    
-    header,
-    section.price,
-    section.why {
-        padding: 1rem;
-    }
-    
-    header {
-        background-color: white;
-        border-top-left-radius: 7px;
-        border-top-right-radius: 7px;
-    }
-    
-    .price {
-        background-color: hsl(179, 62%, 43%);
-    }
-    
-    .why {
-        background-color: hsl(179, 62%, 50%);
-        border-bottom-right-radius: 7px;
-        border-bottom-left-radius: 7px;
-    }
-    
-    section.why,
-    section.price,
-    header {
-        height: 44vh;
-    }
-    
-    .center {
-        display: flex;
-        flex-direction: column;
-    }
+/* ---- Layout Containers ---- */
 
-    /* ---- Page Elements ---- */
-    
-    .lighttxt,
-    .num {
-        display: inline;
-    }
-    
-    .attribution {
-        color: hsl(218, 22%, 67%);
-    }
-    
-    .abvbtn {
-        padding-bottom: 2rem;
-    }
-    
-    button {
-        width: 80%;
-        height: 3.5rem;
-        border-radius: 7px;
-        border-width: 0px;
-        background-color: hsl(71, 73%, 54%);
-        color: #f4ffff;
-        box-shadow: 10px 10px 57px -9px rgba(37, 37, 37, 0.75);
-        align-self: center;
-        font-weight: bold;
-    }
-    
-    .attribution {
-        text-align: center;
-        margin-top: 20px;
-    }
+main {
+  padding: 1rem;
+  width: fit-content;
+  min-width: 400px;
+  max-width: 989px;
+  margin: 0 auto;
+}
+
+header,
+section.price,
+section.why {
+  padding: 1rem;
+}
+
+header {
+  background-color: white;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.price {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.why {
+  background-color: hsl(179, 62%, 50%);
+  border-bottom-right-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+section.why,
+section.price,
+header {
+  height: 44vh;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---- Page Elements ---- */
+
+.lighttxt,
+.num {
+  display: inline;
+}
+
+.attribution {
+  color: hsl(218, 22%, 67%);
+}
+
+.abvbtn {
+  padding-bottom: 2rem;
+}
+
+button {
+  width: 80%;
+  height: 3.5rem;
+  border-radius: 7px;
+  border-width: 0px;
+  background-color: hsl(71, 73%, 54%);
+  color: #f4ffff;
+  box-shadow: 10px 10px 57px -9px rgba(37, 37, 37, 0.75);
+  align-self: center;
+  font-weight: bold;
+}
+
+.attribution {
+  text-align: center;
+  margin-top: 20px;
+}
 
 /* ================================= 
   Media Queries
 ==================================== */
-    
-    @media (min-width: 768px) {
-        .parent {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1.2fr 0.9fr;
-            grid-template-rows: 1fr 1fr 1fr 1.3fr 0.7fr;
-            gap: 0px 0px;
-            grid-auto-flow: row;
-            grid-template-areas: "top top top top" "top top top top" "price price why why" "price price why why" "footer footer footer footer";
-        }
-        .top {
-            grid-area: top;
-        }
-        .price {
-            grid-area: price;
-            border-bottom-left-radius: 7px;
-        }
-        .why {
-            grid-area: why;
-            border-bottom-left-radius: 0;
-        }
-        .footer {
-            grid-area: footer;
-        }
-        button:hover {
-            background-color: whitesmoke;
-            color: black;
-        }
-        header {
-            height: 39vh;
-        }
-    }
+
+@media (min-width: 768px) {
+  .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.2fr 0.9fr;
+    grid-template-rows: 1fr 1fr 1fr 1.3fr 0.7fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "top top top top" "top top top top" "price price why why" "price price why why" "footer footer footer footer";
+  }
+  .top {
+    grid-area: top;
+  }
+  .price {
+    grid-area: price;
+    border-bottom-left-radius: 7px;
+  }
+  .why {
+    grid-area: why;
+    border-bottom-left-radius: 0;
+  }
+  .footer {
+    grid-area: footer;
+  }
+  button:hover {
+    background-color: whitesmoke;
+    color: black;
+  }
+  header {
+    height: 39vh;
+  }
+}
